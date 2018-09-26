@@ -10,6 +10,9 @@ func main() {
 	fmt.Print(b)
 	fmt.Print(c)
 	fmt.Print(d)
+
+	result := myFunc4(23, 44)
+	fmt.Println(result)
 }
 
 // 有一个返回值函数
@@ -31,5 +34,11 @@ func myFunc2() (result int) {
 // 有多个返回值
 func myFunc3() (a, b, c int) {
 	a, b, c = 111, 222, 333
+	return
+}
+
+// 有参数有返回值
+func myFunc4(a, b int) (result int) {
+	result = a + b
 	return
 }
